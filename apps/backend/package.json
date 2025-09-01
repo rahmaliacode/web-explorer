@@ -1,0 +1,21 @@
+{
+  "name": "@explorer-app/backend",
+  "version": "1.0.0",
+  "description": "Backend API for Windows Explorer app",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist",
+    "lint": "eslint src/**/*.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "elysia": "^0.8.0",
+    "@elysiajs/cors": "^0.8.0",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

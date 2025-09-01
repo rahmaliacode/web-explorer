@@ -1,0 +1,22 @@
+{
+  "name": "explorer-app",
+  "version": "1.0.0",
+  "description": "Windows Explorer-like web application monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.4"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
